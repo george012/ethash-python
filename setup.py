@@ -5,7 +5,8 @@ sources = [
     'src/python/core.c',
     'src/libethash/io.c',
     'src/libethash/internal.c',
-    'src/libethash/sha3.c']
+    'src/libethash/sha3.c',
+    ]
 if os.name == 'nt':
     sources += [
         'src/libethash/util_win32.c',
@@ -27,11 +28,13 @@ depends = [
     'src/libethash/internal.h',
     'src/libethash/sha3.h',
     'src/libethash/util.h',
-]
+    'src/libethash/nmap.h',
+    'src/libethash/sha3.h',
+    ]
 ethashpy = Extension('ethashpy',
                      sources=sources,
                      depends=depends,
-                     extra_compile_args=["-Isrc/", "-std=gnu99", "gcc -shared"])
+                     extra_compile_args=["-Isrc/", "-std=gnu99", "-Wall"])
 
 setup(
     name='ethashpy',

@@ -26,12 +26,11 @@ static PyObject *
 mkcache_bytes(PyObject *self, PyObject *args) {
     unsigned long block_number;
     unsigned long cache_size;
-
     if (!PyArg_ParseTuple(args, "k", &block_number))
         return 0;
 
     ethash_light_t L = ethash_light_new(block_number);
-    PyObject * val = Py_BuildValue(PY_STRING_FORMAT, L->cache, L->cache_size);
+    PyObject * val = Py_BuildValue(PY_STRING_FORMAT, L->cache, L -> cache_size);
     free(L->cache);
     return val;
 }

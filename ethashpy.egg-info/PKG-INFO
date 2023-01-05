@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ethashpy
+Version: 0.0.1
+Summary: 修改的Python适配包
+Home-page: https://github.com/george012/ethashpy
+Download-URL: https://github.com/george012/ethashpy/v0.0.1
+Author: WMYeah
+Author-email: george012@163.com
+License: MIT

@@ -1,0 +1,13 @@
+README.md
+setup.py
+ethashpy.egg-info/PKG-INFO
+ethashpy.egg-info/SOURCES.txt
+ethashpy.egg-info/dependency_links.txt
+ethashpy.egg-info/top_level.txt
+src/libethash/internal.c
+src/libethash/io.c
+src/libethash/io_win32.c
+src/libethash/mmap_win32.c
+src/libethash/sha3.c
+src/libethash/util_win32.c
+src/python/core.c
