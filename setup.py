@@ -31,7 +31,7 @@ depends = [
 ethashpy = Extension('ethashpy',
                      sources=sources,
                      depends=depends,
-                     extra_compile_args=["-Isrc/", "-std=gnu99", "-Wall"])
+                     extra_compile_args=["-Isrc/", "-std=gnu99", "gcc -shared"])
 
 setup(
     name='ethashpy',
