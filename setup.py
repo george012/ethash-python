@@ -35,13 +35,13 @@ ethashpy = Extension('ethashpy',
 
 setup(
     name='ethashpy',
-    author="Matthew Wampler-Doty",
-    author_email="matthew.wampler.doty@gmail.com",
+    author="WMYeah",
+    author_email="george012@163.com",
     license='MIT',
-    version='0.0.3',
-    url='https://github.com/ethereum/ethash',
-    download_url='https://github.com/ethereum/ethash/tarball/v23',
-    description=('Python wrappers for ethash, the ethereum proof of work'
-                 'hashing function'),
+    version='0.0.1',
+    url='https://github.com/george012/ethashpy',
+    download_url='https://github.com/george012/ethashpy/v0.0.1',
+    description=('修改的Python适配包'),
     ext_modules=[ethashpy],
 )
+
