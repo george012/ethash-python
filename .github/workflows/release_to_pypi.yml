@@ -23,7 +23,7 @@ jobs:
       - name: Build source and wheel distributions
         run: |
           python3 -m pip install --upgrade build twine
-          python3 setup.py test
+          python3 setup.py check
           python3 -m build
           twine check --strict dist/*
 
